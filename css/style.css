@@ -1,6 +1,7 @@
 :root {
     --foot-height: 100px;
     --upgrade-height: 80px;
+    --nav-height: 50px;
 }
 
 * {
@@ -11,7 +12,12 @@
 
 html {
     font-size: 100%;
+    font-family: 'Balsamiq Sans', cursive;
 }
+
+
+
+/* commun uses */
 
 .absolute {
     position: absolute;
@@ -28,6 +34,12 @@ html {
 .fl {
     float: left;
 }
+
+/* end common uses */
+
+
+
+/* flex */
 
 .flex {
     display: flex;
@@ -48,6 +60,20 @@ html {
     flex-wrap: nowrap;
 }
 
+.box-center {
+    justify-content: center;
+}
+
+.box-center {
+    justify-content: center;
+}
+
+/* end flex */
+
+
+
+/* container */
+
 header {
     height: calc(100vh - var(--foot-height));
     width: 10%;
@@ -55,7 +81,9 @@ header {
 }
 
 main {
+    background-color: cyan;
     width: 90%; 
+    overflow: auto;
 }
 
 footer {
@@ -72,19 +100,77 @@ footer {
 }
 
 .nav {
-    height: var(--upgrade-height);
+    height: var(--nav-height);
     background-color: wheat;
 }
 
 .container {
-    height: calc(100vh - (var(--upgrade-height) + var(--upgrade-height) + var(--foot-height)));
-    background-color: yellow;
+    height: calc(100vh - (var(--upgrade-height) + var(--nav-height) + var(--foot-height)));
+    padding: 10px;
 }
 
-a {
+.row-primary {
+    width: 100%;
+    background-color: brown;
+    min-height: calc(var(--foot-height) * 2.5);
+    margin-bottom: 0.5em;
+}
+
+.row {
+    width: 100%;
+    height: 200px;
+    background-color: brown;
+    margin-top: 1.5em;
+}
+
+/* end container */
+
+
+
+/* text */
+
+h1 {
+    padding: 5px 0;
+    font-weight: 700;
+}
+
+span {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+/* text */
+
+
+
+/* list */
+
+ul {
+    list-style: none;
+    display: inline;
+    gap: 20px;
+    flex-basis: 100px;
+}
+
+ul li a{
+    line-height: var(--nav-height);
+    text-decoration: none;
+    color: white;
+}
+
+/* end list */
+
+
+
+
+/* button */
+
+.btn-primary {
     top: 27%;
     right: 2%;
     background-color: white;
     padding: 10px 30px;
     z-index: 999;
 }
+
+/* end button */
