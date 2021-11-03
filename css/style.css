@@ -1,0 +1,90 @@
+:root {
+    --foot-height: 100px;
+    --upgrade-height: 80px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+.flex {
+    display: flex;
+}
+
+.box-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.box-column {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.box-column-no {
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+header {
+    height: calc(100vh - var(--foot-height));
+    width: 10%;
+    background-color: coral;
+}
+
+main {
+    width: 90%; 
+}
+
+footer {
+    height: var(--foot-height);
+    width: 100%;
+    background-color: darkgreen;
+    bottom: 0;
+    z-index: 1;
+}
+
+.upgrade {
+    height: var(--upgrade-height);
+    background-color: violet;
+}
+
+.nav {
+    height: var(--upgrade-height);
+    background-color: wheat;
+}
+
+.container {
+    height: calc(100vh - (var(--upgrade-height) + var(--upgrade-height) + var(--foot-height)));
+    background-color: yellow;
+}
+
+a {
+    top: 27%;
+    right: 2%;
+    background-color: white;
+    padding: 10px 30px;
+    z-index: 999;
+}
