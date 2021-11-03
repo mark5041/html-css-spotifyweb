@@ -137,8 +137,17 @@ footer {
 
 .container-nav {
     width: 90%;
-    height: 100%;
-    margin: 20px auto 0 auto;
+    height: 96%;
+    margin: 25px auto 0 auto;
+    row-gap: 30px;
+}
+
+.playlist {
+    overflow: auto;
+}
+
+.nav-footer {
+    margin-top: auto;
 }
 
 /* end container */
@@ -200,27 +209,38 @@ span {
     color: #77797e;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* text */
 
 
 
 /* list */
 
-.navigation ul {
+ul {
     list-style: none;
-    flex-basis: 100%;
-    row-gap: 10px;
 }
 
-.navigation li {
+.container-nav li {
     height: 40px;
 }
 
-.navigation li button {
+.container-nav li button {
     background-color: transparent;
     border: none;
     justify-content: start;
     align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.navigation ul {
+    flex-basis: 100%;
+    row-gap: 10px;
 }
 
 .navigation img {
@@ -234,17 +254,73 @@ span {
     font-size: 1.4em;
 }
 
+.playlist ul {
+    row-gap: 15px;
+}
+
+.playlist i {
+    width: 20%;
+    font-size: 4em;
+}
+
+.playlist span {
+    width: 100%;
+    text-align: start;
+    font-size: 1.4em;
+}
+
+.playlist ul li:first-of-type {
+    margin: 10px 0 30px 0;
+}
+
+.playlist ul li:first-of-type span {
+    width: 80%;
+    padding-left: 1.5em;
+}
+
 .nav ul {
-    list-style: none;
     gap: 20px;
     flex-basis: 100px;
 }
 
 .nav ul li a{
     line-height: var(--nav-height);
-    text-decoration: none;
     color: white;
 }
+
+.nav-footer li:first-child {
+    border-bottom: 1px solid gray;
+}
+
+.nav-footer li:last-child {
+    align-items: center;
+    margin-top: 0.8em;
+}
+
+.nav-footer span {
+    padding-left: 1.4em;
+    font-size: 1.2em;
+}
+
+.nav-footer h2 {
+    font-size: 1.2em;
+    padding-left: 1.4em;
+}
+
+.nav-footer img {
+    height: 25px;
+}
+
+.nav-footer li:last-child button {
+    padding: 3px 6px;
+    border-radius: 20px;
+    background-color: gray;
+}
+
+.nav-footer li:last-child img {
+    height: 30px;
+}
+
 
 /* end list */
 
@@ -270,13 +346,6 @@ span {
 
 /* header */
 
-.logo img {
-    height: 50px;
-    margin-bottom: 1.5em;
-}
 
-.container-nav a {
-    text-decoration: none;
-}
 
 /* end header */
