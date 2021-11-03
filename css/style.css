@@ -74,6 +74,10 @@ html {
     justify-content: center;
 }
 
+.box-space-bew {
+    justify-content: space-between;
+}
+
 
 /* end flex */
 
@@ -87,13 +91,13 @@ body {
 
 header {
     height: calc(100vh - var(--foot-height));
-    width: 10%;
+    width: 15%;
     background-color: black;
 }
 
 main {
     background-color: transparent;
-    width: 90%; 
+    width: 85%; 
 }
 
 main > div:last-child {
@@ -105,7 +109,7 @@ footer {
     width: 100%;
     background-color: #282828;
     bottom: 0;
-    z-index: 1;
+    position: fixed;
 }
 
 .upgrade {
@@ -128,7 +132,7 @@ footer {
     width: 100%;
     background-color: brown;
     margin-top: 1.5em;
-    gap: 20px;
+    column-gap: 5px;
 }
 
 /* end container */
@@ -140,10 +144,10 @@ footer {
 .card {
     background-color: blue;
     width: 100%;
-    max-width: calc(100% / 6 - (20px * 5));
+    max-width: 220px;
 }
 
-.image {
+.image, .description {
     flex-basis: 100%;
 }
 
@@ -152,12 +156,11 @@ footer {
 }
 
 .description {
-    flex-basis: 100%;
+    text-align: center;
 }
 
 .description span {
     display: block;
-    text-align: center;
     margin-bottom: 0.4em;
 }
 
@@ -228,3 +231,12 @@ ul li a{
 }
 
 /* end button */
+
+@media screen and (max-width: 700px) {
+
+    .container > div > div.row {
+        flex-wrap: wrap;
+    }
+    
+}
+
