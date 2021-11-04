@@ -321,11 +321,11 @@ ul {
 
 .nav-footer span {
     padding-left: 1.4em;
-    font-size: 1.2em;
+    font-size: var(--span-text-size);
 }
 
 .nav-footer h2 {
-    font-size: 1.2em;
+    font-size: var(--span-text-size);
     padding-left: 1.4em;
 }
 
@@ -370,8 +370,39 @@ a, button {
 
 
 
-/* header */
+/* controller  */
 
+footer {
+    
+}
 
+.music {
+    justify-content: center;
+    column-gap: 20px
+}
 
-/* end header */
+.music .music-image {
+    height: 50px;
+    width: 50px;
+    margin-left: 15px;
+}
+
+.music img {
+    height: 100%;
+}
+
+.music-name {
+    height: 80px;
+    justify-content: center;
+    padding-right: 2em;
+}
+
+.music h2 {
+    font-size: var(--span-text-size);
+}
+
+.save-music {
+    gap: 10px
+}
+
+/* end controller */
