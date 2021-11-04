@@ -165,13 +165,18 @@ footer {
 }
 
 .playlist {
-    overflow: auto;
     min-height: 100px;
+}
+
+.playlist-name  {
+    height: 100%;
+    overflow: auto;
 }
 
 .nav-footer {
     margin-top: auto;
 }
+
 /* end container */
 
 
