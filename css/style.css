@@ -26,6 +26,12 @@ html {
     overflow: hidden;
 }
 
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -403,6 +409,57 @@ footer {
 
 .save-music {
     gap: 10px
+}
+
+.duration {
+    width: 50%;
+}
+
+.control-button {
+    column-gap: 30px;
+    align-items: center;
+}
+
+.control-button i {
+    font-size: 1.5em;
+}
+
+.control-button a:nth-child(3) i{
+    font-size: 2em;
+}
+
+.time-bar {
+    column-gap: 20px;
+    align-items: center;
+}
+
+.bar {
+    height: 5px;
+    width: 80%;
+    background-color: gray;
+}
+
+.bar .fr {
+    height: 100%;
+    width: 65%;
+    background-color: #5a5a5a;
+}
+
+.bar .fl {
+    height: 100%;
+    width: 35%;
+    background-color: #c1c1c1;
+
+}
+
+.thumb {
+    position: absolute;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background-color: orange;
+    top: -3.5px;
+    right: 0;
 }
 
 /* end controller */
