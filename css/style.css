@@ -23,6 +23,7 @@
 html {
     font-size: 100%;
     font-family: 'Balsamiq Sans', cursive;
+    overflow: hidden;
 }
 
 /* width */
@@ -41,12 +42,6 @@ html {
     background: grey; 
     border-radius: 10px;
   }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #b30000; 
-  }
-
 
 
 /* commun uses */
@@ -152,9 +147,8 @@ footer {
 
 .row {
     width: 100%;
-    background-color: brown;
     margin-top: 1.5em;
-    column-gap: 5px;
+    column-gap: 1%;
 }
 
 .container-nav {
@@ -181,7 +175,6 @@ footer {
 /* card */
 
 .card {
-    background-color: blue;
     width: 100%;
     max-width: 220px;
 }
@@ -210,6 +203,9 @@ footer {
     color: white;
 }
 
+.container > div:last-of-type .card > .image img {
+    clip-path: ellipse(48% 50% at 50% 50%);
+}
 
 /* end card */
 
@@ -221,6 +217,7 @@ h1 {
     padding: 5px 0;
     font-size: var(--h1-text-size);
     font-weight: 700;
+    margin-top: 1em;
 }
 
 h2 {
@@ -362,6 +359,10 @@ ul {
     border: 2px solid white;
     border-radius: 30px;
     z-index: 999;
+}
+
+a, button {
+    cursor: pointer;
 }
 
 /* end button */
