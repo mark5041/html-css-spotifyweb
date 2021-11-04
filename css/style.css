@@ -164,13 +164,10 @@ footer {
     row-gap: 30px;
 }
 
-.playlist {
-    min-height: 100px;
-}
-
 .playlist-name  {
     height: 100%;
     overflow: auto;
+    min-height: 100px;
 }
 
 .nav-footer {
@@ -281,7 +278,7 @@ ul {
     font-size: 1.4em;
 }
 
-.playlist ul {
+.playlist-name ul {
     row-gap: 15px;
 }
 
@@ -290,14 +287,14 @@ ul {
     font-size: 4em;
 }
 
-.playlist span {
+.playlist-name span, .playlist span {
     width: 100%;
     text-align: start;
     font-size: 1.4em;
 }
 
 .playlist > button {
-    margin: 10px 0 30px 0;
+    margin: 10px 0 10px 0;
 }
 
 .playlist > button span {
