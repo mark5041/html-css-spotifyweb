@@ -286,8 +286,9 @@ ul {
 }
 
 .playlist i {
-    width: 20%;
-    font-size: 4em;
+    font-size: 2em;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 12px;
 }
 
 .playlist-name span, .playlist span {
@@ -302,13 +303,13 @@ ul {
 
 .playlist > button span {
     width: 80%;
-    padding-left: 1.5em;
+    margin-left: 0.5em;
 }
 
 .nav ul {
     gap: 20px;
     flex-basis: 100px;
-    overflow: auto;
+    margin: 0 2%;
 }
 
 .nav ul li a{
@@ -475,6 +476,7 @@ footer {
     column-gap: 20px;
     font-size: var(--span-text-size);
     margin-right: 15px;
+    align-items: center;
 }
 
 .volume-bar {
@@ -504,10 +506,6 @@ footer {
     background-color: orange;
     top: -3.5px;
     right: 0;
-}
-
-.volume {
-    align-items: center;
 }
 
 /* end controller */
