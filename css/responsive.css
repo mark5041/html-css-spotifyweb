@@ -14,13 +14,6 @@
 }
 
 @media screen and (max-width: 1100px) {
-    header {
-        width: 25%;
-    }
-
-    main{
-        width: 75%;
-    }
 
     .row {
         flex-wrap: wrap;
@@ -32,26 +25,125 @@
     }
 }
 
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 945px) {
     
     .nav {
-        height: calc(var(--nav-height)*2);
+        height: calc(var(--nav-height)*1.5);
+    }
+
+    .nav ul {
+        line-height: calc((var(--nav-height)*1.5)/2);
+    }
+
+    footer {
+        column-gap: 15px;
     }
 
     .music, .volume {
-        width: 27%;
+        width: 30%;
     }
 
     .duration {
-        width: 46%;
+        width: 40%;
     }
-    
-    .music-image {
-        width: 15%;
+
+    .time-bar .bar {
+        width: 68%;
     }
 
     .save-music {
         flex-direction: column;
         justify-content: center;
     }
+}
+
+@media screen and (max-width: 750px) {
+   
+    .row {
+        flex-wrap: wrap;
+        row-gap: 15px;
+    }
+
+    .card {
+        flex-basis: 48%;
+    }
+
+    .time-bar .bar {
+        width: 55%;
+    }
+
+    .volume {
+        font-size: 0.9em;
+        column-gap: 15px;
+    }
+
+}
+
+@media screen and (max-width: 610px) {
+   
+    header {
+        width: 45px;
+        background-color: black;
+    }
+    
+    main {
+        background-color: transparent;
+        width: calc(100% - 45px); 
+    }
+
+    .row {
+        flex-wrap: wrap;
+        row-gap: 15px;
+    }
+
+    .container-nav {
+        align-items: center;
+    }
+
+    .nav-footer button {
+        justify-content: center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav-footer li:first-child {
+        border-bottom: 0;
+    }
+
+    .nav-footer ul li:first-child button:first-child img {
+        width: 230px;
+    }
+
+    .nav-footer li:last-child button {
+        padding: 3px 10px 3px 5px;
+        border-radius: 20px;
+        background-color: gray;
+    }
+    
+    .nav-footer li:last-child img {
+        height: 23px;
+    }
+
+    .playlist, .playlist-name, header span, header h2, .logo {
+        display: none;
+    }
+
+    .navigation ul li:first-child {
+        display: block;
+    }
+
+    .card {
+        flex-basis: 100%%;
+    }
+
+    .time-bar .bar {
+        width: 55%;
+    }
+
+    .volume {
+        font-size: 0.9em;
+        column-gap: 15px;
+    }
+
 }

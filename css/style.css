@@ -114,13 +114,13 @@ body {
 
 header {
     height: calc(100vh - var(--foot-height));
-    width: 15%;
+    width: 280px;
     background-color: black;
 }
 
 main {
     background-color: transparent;
-    width: 85%; 
+    width: calc(100% - 280px); 
 }
 
 main > div:last-child {
@@ -226,6 +226,10 @@ h1 {
     margin-top: 1em;
 }
 
+.container > div:first-child h1{
+    margin-top: 0.5em;
+}
+
 h2 {
     font-size: var(--h2-text-size);
 }
@@ -271,7 +275,7 @@ ul {
 }
 
 .navigation img {
-    width: 12%;
+    width: 2.3em;
 }
 
 .navigation span {
@@ -279,6 +283,10 @@ ul {
     text-align: start;
     padding-left: 0.3em;
     font-size: 1.4em;
+}
+
+.navigation ul li:first-child {
+    display: none;
 }
 
 .playlist-name ul {
@@ -310,11 +318,12 @@ ul {
     gap: 20px;
     flex-basis: 100px;
     margin: 0 2%;
+    line-height: var(--nav-height);
 }
 
 .nav ul li a{
-    line-height: var(--nav-height);
-    color: white;
+    color: #77797e;
+    font-size: 0.8em;
 }
 
 .nav-footer li:first-child {
@@ -387,11 +396,11 @@ footer {
     display: inline-flex;
     width: 25%;
     align-items: center;
-    column-gap: 10px;
+    column-gap: 15px;
 }
 
 .music-image {
-    width: 10%;
+    width: 35px;
     margin-left: 15px;
 }
 
@@ -401,11 +410,15 @@ footer {
 
 .music-name {
     height: 80px;
-    padding-right: 2em;
+    padding-right: 0.5em;
 }
 
 .music h2 {
-    font-size: var(--span-text-size);
+    font-size: 0.9em;
+}
+
+.music span {
+    font-size: 0.7em;
 }
 
 .save-music {
@@ -415,7 +428,7 @@ footer {
 .save-music {
     align-items: center;
     column-gap: 15px;
-    font-size: var(--span-text-size);
+    font-size: 1em;
 }
 
 .duration {
@@ -428,11 +441,11 @@ footer {
 }
 
 .control-button i {
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .control-button a:nth-child(3) i{
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .time-bar {
@@ -474,7 +487,7 @@ footer {
     align-items: center;
     justify-content: flex-end;
     column-gap: 20px;
-    font-size: var(--span-text-size);
+    font-size: 0.9em;
     margin-right: 15px;
     align-items: center;
 }
