@@ -433,6 +433,7 @@ footer {
 
 .duration {
     width: 50%;
+    row-gap: 10px;
 }
 
 .control-button {
