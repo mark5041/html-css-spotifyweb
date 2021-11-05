@@ -20,7 +20,12 @@
     color: rgba(255, 255, 255, 0.904);
 }
 
-.navigation button:link, .navigation button:active, .navigation button:focus, .playlist-name button:hover span, .nav-footer span:hover, .nav li:hover a, .music-name span:hover, .save-music i:hover {
+.navigation button:hover, .playlist-name button:hover span, .nav-footer span:hover, .nav li:hover a, .music-name span:hover, .save-music i:hover {
+    color: rgba(255, 255, 255, 0.904);
+    cursor: pointer;
+}
+
+.navigation button:link span, .navigation button:active span, .navigation button:hover span {
     color: rgba(255, 255, 255, 0.904);
     cursor: pointer;
 }
@@ -39,6 +44,18 @@
 
 /* border */
 
-.nav ul li:hover:before, .nav ul li:active:before {
+.nav ul li:hover:before, .navigation ul li:hover:before {
     display: block;
 }
+
+/* border */
+
+
+
+/* button */
+
+.btn-primary:hover {
+    padding: 12px 35px;
+}
+
+/* button */

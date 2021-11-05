@@ -105,6 +105,17 @@
         align-items: center;
     }
 
+    .navigation ul li:before {
+        content : "";
+        position: absolute;
+        left    : -19%;
+        bottom  : 0;
+        height  : 100%;
+        width   : 1px;  
+        border-left:1px solid rgb(94, 255, 0);
+        display: none;
+     }
+
     .nav-footer ul {
         align-content: center;
     }

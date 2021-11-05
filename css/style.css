@@ -305,6 +305,21 @@ ul {
     display: none;
 }
 
+.navigation ul li {
+    position: relative;
+ }
+ 
+ .navigation ul li:before {
+     content : "";
+     position: absolute;
+     left    : -5%;
+     bottom  : 0;
+     height  : 100%;
+     width   : 1px;  
+     border-left:1px solid rgb(94, 255, 0);
+     display: none;
+  }
+
 .playlist-name ul {
     row-gap: 15px;
 }
@@ -400,7 +415,7 @@ ul {
 /* button */
 
 .btn-primary {
-    top: 27%;
+    top: 25%;
     right: 2%;
     background-color: transparent;
     padding: 10px 30px;
@@ -419,10 +434,6 @@ a, button {
 
 
 /* controller  */
-
-footer {
-    
-}
 
 .music {
     display: inline-flex;
