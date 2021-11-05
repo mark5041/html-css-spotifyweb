@@ -111,18 +111,27 @@
         border-bottom: 0;
     }
 
-    .nav-footer ul li:first-child button:first-child img {
-        width: 230px;
+    .nav-footer li:first-child button {
+        width: 50px;
+    }
+
+    .nav-footer li:first-child img {
+        width: 100%;
     }
 
     .nav-footer li:last-child button {
-        padding: 3px 10px 3px 5px;
+        padding: 3px 12px 3px 5px;
         border-radius: 20px;
         background-color: gray;
     }
     
     .nav-footer li:last-child img {
-        height: 23px;
+        height: 20px;
+    }
+
+    .nav-footer li:last-child {
+        align-items: center;
+        margin-top: 0em;
     }
 
     .playlist, .playlist-name, header span, header h2, .logo {
