@@ -185,8 +185,22 @@ footer {
     max-width: 220px;
 }
 
-.image, .description {
+.image, .description, .dark-card {
     flex-basis: 100%;
+    background-color: transparent;
+    border: 0;
+}
+
+.dark-card {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.527);
+    z-index: 999;
+    top: 0;
+    left: 0;
+    align-items: center;
+    font-size: 2.5em;
+    visibility: hidden;
 }
 
 .image img {
@@ -209,9 +223,11 @@ footer {
     color: white;
 }
 
-.container > div:last-of-type .card > .image img {
-    clip-path: ellipse(48% 50% at 50% 50%);
+.container > div:last-of-type .card > .image img, .container > div:last-of-type .card .dark-card {
+    border-radius: 50%;
 }
+
+
 
 /* end card */
 
@@ -297,6 +313,7 @@ ul {
     font-size: 2em;
     background-color: rgba(255, 255, 255, 0.4);
     padding: 12px;
+    color: black;
 }
 
 .playlist-name span, .playlist span {
@@ -320,6 +337,21 @@ ul {
     margin: 0 2%;
     line-height: var(--nav-height);
 }
+
+.nav ul li {
+   position: relative;
+}
+
+.nav ul li:before {
+    content : "";
+    position: absolute;
+    left    : 25%;
+    bottom  : 0;
+    height  : 1px;
+    width   : 50%;  
+    border-bottom:1px solid rgb(94, 255, 0);
+    display: none;
+ }
 
 .nav ul li a{
     color: #77797e;
@@ -423,22 +455,23 @@ footer {
 
 .save-music {
     height: 100%;
-}
-
-.save-music {
     align-items: center;
     column-gap: 15px;
     font-size: 1em;
 }
 
+.save-music a i {
+    color: #77797e;
+}
+
 .duration {
     width: 50%;
-    row-gap: 10px;
 }
 
 .control-button {
     column-gap: 30px;
     align-items: center;
+    height: 50%;
 }
 
 .control-button i {
@@ -452,6 +485,7 @@ footer {
 .time-bar {
     column-gap: 20px;
     align-items: center;
+    height: 50%;
 }
 
 .bar {
@@ -494,7 +528,7 @@ footer {
 }
 
 .volume-bar {
-    width: 35%;
+    width: 50%;
 }
 
 .volume .bar {
@@ -520,6 +554,7 @@ footer {
     background-color: orange;
     top: -3.5px;
     right: 0;
+    display: none;
 }
 
 /* end controller */

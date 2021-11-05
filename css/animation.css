@@ -1,0 +1,44 @@
+/* hover */
+
+.bar:hover .thumb {
+    display: block;
+}
+
+.time-bar .bar:hover .fl, .volume .bar:hover .fl {
+    background-color: coral;
+}
+
+.image:hover .dark-card{
+    visibility: visible;
+}
+
+.playlist:hover i{
+    background-color: rgba(255, 255, 255, 0.904);
+}
+
+.playlist:hover span{
+    color: rgba(255, 255, 255, 0.904);
+}
+
+.navigation button:link, .navigation button:active, .navigation button:focus, .playlist-name button:hover span, .nav-footer span:hover, .nav li:hover a, .music-name span:hover, .save-music i:hover {
+    color: rgba(255, 255, 255, 0.904);
+    cursor: pointer;
+}
+
+.music-name span:hover {
+    text-decoration: underline;
+}
+
+.control-button i.fa-regular:hover {
+    font-size: 1.8em;
+}
+
+/* hover */
+
+
+
+/* border */
+
+.nav ul li:hover:before, .nav ul li:active:before {
+    display: block;
+}

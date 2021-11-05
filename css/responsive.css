@@ -3,7 +3,7 @@
     /* height */
     --foot-height: 100px;
     --upgrade-height: 80px;
-    --nav-height: 65px;
+    --nav-height: 50px;
     --row-height: 290px;
     
 
@@ -35,6 +35,10 @@
         line-height: calc((var(--nav-height)*1.5)/2);
     }
 
+    .container {
+        height: calc(100vh - (var(--upgrade-height) + 110px + var(--foot-height)));
+    }
+
     footer {
         column-gap: 15px;
     }
@@ -54,6 +58,7 @@
     .save-music {
         flex-direction: column;
         justify-content: center;
+        row-gap: 8px;
     }
 }
 
@@ -62,10 +67,11 @@
     .row {
         flex-wrap: wrap;
         row-gap: 15px;
+        column-gap: 10px;
     }
 
     .card {
-        flex-basis: 48%;
+        flex-basis: calc(50% - 10px);
     }
 
     .time-bar .bar {
@@ -93,7 +99,6 @@
 
     .row {
         flex-wrap: wrap;
-        row-gap: 15px;
     }
 
     .container-nav {
@@ -125,6 +130,7 @@
     .nav-footer li:last-child {
         align-items: center;
         margin-top: 0em;
+        margin-bottom: 0.5em;
     }
 
     .playlist, .playlist-name, header span, header h2, .logo {
@@ -133,10 +139,6 @@
 
     .navigation ul li:first-child {
         display: block;
-    }
-
-    .card {
-        flex-basis: 100%;
     }
 
     .music {
@@ -149,7 +151,10 @@
 
     .volume {
         font-size: 0.9em;
-        column-gap: 15px;
+        column-gap: 8px;
     }
 
+}
+
+@media screen and (max-width: 525px) {
 }
