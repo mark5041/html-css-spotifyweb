@@ -22,7 +22,7 @@
 
 html {
     font-size: 100%;
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Montserrat', sans-serif;
     overflow: hidden;
 }
 
@@ -220,7 +220,7 @@ footer {
 .description > span:first-child {
     margin: 1em 0 0.5em 0;
     font-size: var(--span-text-size);
-    font-weight: 400;
+    font-weight: 500;
     color: white;
 }
 
@@ -239,7 +239,7 @@ footer {
 h1 {
     padding: 5px 0;
     font-size: var(--h1-text-size);
-    font-weight: 700;
+    font-weight: 600;
     margin-top: 1em;
 }
 
@@ -253,7 +253,7 @@ h2 {
 
 span {
     font-size: calc(var(--span-text-size) - 5px);
-    font-weight: 400;
+    font-weight: 500;
     color: #77797e;
 }
 
