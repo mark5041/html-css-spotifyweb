@@ -194,13 +194,14 @@ footer {
 .dark-card {
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.527);
+    background-color: rgba(0, 0, 0, 0.377);
     z-index: 999;
     top: 0;
     left: 0;
     align-items: center;
-    font-size: 2.5em;
-    visibility: hidden;
+    font-size: 4em;
+    opacity: 0;
+    transition: ease-out 0.35s;
 }
 
 .image img {
@@ -317,7 +318,8 @@ ul {
      height  : 100%;
      width   : 1px;  
      border-left:1px solid rgb(94, 255, 0);
-     display: none;
+     opacity: 0;
+     transition: 0.3s;
   }
 
 .playlist-name ul {
@@ -365,7 +367,8 @@ ul {
     height  : 1px;
     width   : 50%;  
     border-bottom:1px solid rgb(94, 255, 0);
-    display: none;
+    opacity: 0;
+    transition: 0.3s;
  }
 
 .nav ul li a{

@@ -9,7 +9,7 @@
 }
 
 .image:hover .dark-card{
-    visibility: visible;
+    opacity: 1;
 }
 
 .playlist:hover i{
@@ -44,8 +44,8 @@
 
 /* border */
 
-.nav ul li:hover:before, .navigation ul li:hover:before {
-    display: block;
+.nav ul li:hover:before, .navigation ul li:not(li:nth-child(1)):hover:before {
+    opacity: 1;
 }
 
 /* border */
