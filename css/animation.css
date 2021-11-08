@@ -35,7 +35,7 @@
 }
 
 .control-button i.fa-regular:hover {
-    font-size: 1.8em;
+    transform: scale(1.4);
 }
 
 /* hover */

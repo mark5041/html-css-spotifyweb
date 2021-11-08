@@ -312,6 +312,7 @@ ul {
  .navigation ul li button { 
      padding-left: 5%;
      transition: 0.3s;
+     border-left: 2px solid rgba(94, 255, 0, 0);
   }
 
 .playlist-name ul {
@@ -358,7 +359,6 @@ ul {
     bottom  : 0;
     height  : 1px;
     width   : 50%;  
-    border-bottom:1px transparent rgba(94, 255, 0, 0);
     transition: 0.3s;
  }
 
@@ -494,10 +494,6 @@ a, button {
 }
 
 .bar {
-    background-color: gray;
-}
-
-.bar .fr {
     background-color: #5a5a5a;
 }
 
@@ -539,11 +535,6 @@ a, button {
 .volume .bar {
     height: 5px;
     width: 100%;
-}
-
-.volume .bar .fr {
-    height: 100%;
-    width: 65%;
 }
 
 .volume .bar .fl {
