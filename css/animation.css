@@ -44,10 +44,17 @@
 
 /* border */
 
-.nav ul li:hover:before, .navigation ul li:not(li:nth-child(1)):hover:before {
-    opacity: 1;
+.nav ul a:link:before {
+    border-bottom: 1px transparent rgb(94, 255, 0);
 }
 
+.nav ul a:hover:before, .nav ul a:focus:before {
+    border-bottom: 1px solid rgb(94, 255, 0);
+}
+
+.navigation ul li:not(li:nth-child(1)) button:hover, .navigation ul li:not(li:nth-child(1)) button:link, .navigation ul li:not(li:nth-child(1)) button:focus {
+    border-left: 2px solid rgb(94, 255, 0);
+}
 /* border */
 
 

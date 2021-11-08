@@ -158,10 +158,13 @@ footer {
 }
 
 .container-nav {
-    width: 90%;
     height: 96%;
-    margin: 25px auto 0 auto;
+    margin-top: 25px;
     row-gap: 30px;
+}
+
+.logo, .playlist, .playlist-name, .nav-footer {
+    padding: 0 5%;
 }
 
 .playlist-name  {
@@ -305,20 +308,9 @@ ul {
 .navigation ul li:first-child {
     display: none;
 }
-
-.navigation ul li {
-    position: relative;
- }
  
- .navigation ul li:before {
-     content : "";
-     position: absolute;
-     left    : -5%;
-     bottom  : 0;
-     height  : 100%;
-     width   : 1px;  
-     border-left:1px solid rgb(94, 255, 0);
-     opacity: 0;
+ .navigation ul li button { 
+     padding-left: 5%;
      transition: 0.3s;
   }
 
@@ -359,15 +351,14 @@ ul {
    position: relative;
 }
 
-.nav ul li:before {
+.nav ul a:before {
     content : "";
     position: absolute;
     left    : 25%;
     bottom  : 0;
     height  : 1px;
     width   : 50%;  
-    border-bottom:1px solid rgb(94, 255, 0);
-    opacity: 0;
+    border-bottom:1px transparent rgba(94, 255, 0, 0);
     transition: 0.3s;
  }
 
